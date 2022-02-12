@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border{
+    border:1px solid transparent;
+    border-radius: 20px;
+}
+
+body{
+    background-color: lightblue;
+    min-height: 100vh;
+    background-position: center;
+}
+
+.container{
+    width: 60%;
+    background-color: white;
+    align-self: center;
+    display: block;
+    margin: 25vh auto;
+    box-shadow: 5px 10px 20px black;
+}
+
+
+ul li{
+    height: 100%;
+    cursor:  pointer;
+    position: relative;
+    padding: 20px 0 20px 20px ;
+    background : whitesmoke;
+    font-size: 2rem;
+    transition: 0.5s ease-in;
+    user-select: none;
+}
+
+ul li:hover{
+    background-color: #ddd;
+}
+
+ul li:nth-child(odd){
+    background-color: white;
+}
+
+ul li.checked{
+    background: #777;
+    color: white;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    content: "";
+    position: absolute;
+    border-color: black;
+    font-weight: 900;
+    border-style: solid;
+    border-width: 0 6px 8px 0;
+    top:30px ;
+    left:15px;
+    transform :rotate(45deg);
+    height: 3vh;
+    width: 7px;
+}
+
+.close{
+    position: absolute;
+    right: 0;
+    top: 3vh;
+    margin: 0 1vw;
+    transition: .4s ease-out;
+    width:5vw;
+    text-align: center;
+    color: #777;
+}
+
+.close:hover{
+    background-color: red;
+    transform: scale(1.1);
+    color: black;
+}
+
+.header{
+    background-color: #E8FFB7;
+    padding: 8vh 3vh;
+    text-align: center;
+}
+
+
+.header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input{
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    padding: 10px;
+    float: left;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.add-btn{
+    padding: 10px;
+    width: 25%;
+    border-radius: 10px;
+    margin: 0 1vw;
+    background : #D9E5D6;
+    float: left;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    transition: 0.4s ease-in-out;
+}
+
+.add-btn:hover{
+    background-color: rgb(226, 226, 195);
+    color: black;
+    transform: scale(1.06);
+}
+
+h2{
+    margin:0 0 5vh 0;
+    font-family: cursive;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 0;
+    font-size: 2rem;
+}
